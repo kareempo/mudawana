@@ -1,0 +1,23 @@
+
+
+    {% extends 'basic.html' %}
+    {% load static %}
+
+    {%block 'content'%}
+    {% for post in posts %}
+        <div class="border text-right p-3 mt-3">
+            <img  class='border m-2 img-fluid rounded-circle' style="display:inline" src="{% static 'blog/images/logo.png' %}" alt="user" width="70px">
+            <a href='#' class='text-decoration-none'><h4 class="text-primary mr-4" style="display:inline">{{post.title}}</h4></a>
+            <h5 class="mr-5" >{{post.author}}</h5>
+            <p class="text-dark">{{post.content}}</p>
+            <span class="text-secondary">{{post.post_date |date:"(j-M-Y) H:i"}}</span>
+
+        </div>
+    {% endfor %} 
+    {% endblock 'content' %}
+
+
+
+
+    
+

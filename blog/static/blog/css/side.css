@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../fonts/tajawal/Tajawal-Regular.ttf') format('truetype'),local('Tajawal');
+}
+
+
+Html , body{
+font-family: Tajawal, sans-serif, Tahoma, Times, serif;
+direction: rtl;
+text-align: right;
+
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    font-weight: bolder;
+}
+list-group-item{
+    padding: 3;
+    padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

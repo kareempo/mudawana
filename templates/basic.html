@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if title %}
+        مدونة | {{title}}
+        {% else  %}
+        مدونة
+        {% endif %}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href={% static 'blog/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href={% static 'blog/css/main.css' %}>
+    <title>{{title}}</title>
+</head>
+<body>
+{% include   'parts/navBar.html' %}
+
+
+<section>
+    <div class="container mt-3 mb-3">
+    <div class="row">
+        <div class="col-md-3 bg-primary pt-3">
+            {% include 'parts/sideBar.html' %}
+        </div>
+        
+        <div class="col-md-9 bg-light text-center">
+            {% block 'content' %}{% endblock 'content' %}
+        </div>
+    </div>
+    </div>
+</section>
+{% include 'parts/footer.html' %}
+
+
+
+<script src="{% static 'blog/js/jquery.min.js' %}"></script>
+<script src="{% static 'blog/js/popper.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blog/js/fontAwesome-all.min.js' %}"></script>
+</body>
+</html>

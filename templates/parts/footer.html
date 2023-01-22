@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href={% static 'blog/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href={% static 'blog/css/side.css' %}>
+    <title>{{title}}</title>
+</head>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md bg-primary p-3">
+                <div class="card-group">
+                <div class="card mr-3 text-center p-3">
+                    <div class="card-title border-bottom">
+                        <h3>
+                            من أنا
+                        </h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="{% static 'blog/images/logo.png' %}" alt="شعار المدونة" width="90px" class="mb-3">
+                        <p>من انا نص تجريبي</p>
+                    </div>
+
+                </div>
+                <div class="card mr-3 text-center p-3">
+                    <div class="card-title border-bottom">
+                        <h3>
+                            مواقع أخرى
+                        </h3>
+                    </div>
+                    <div class="card-body text-center">
+                       <ul class="text-center">
+                        <li class="nav-link"><a href="#">site a1</a></li>
+                        <li class="nav-link"><a href="#">site a1</a></li>
+                        <li class="nav-link"><a href="#">site a1</a></li>
+                        <li class="nav-link"><a href="#">site a1</a></li>
+                       </ul>
+                    </div>
+
+                </div>
+                <div class="card mr-3 text-center p-3">
+                    <div class="card-title border-bottom ">
+                        <h3 class="p-2">
+                            تواصل معنا
+                        </h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="#"><i class="fab fa-facebook mr-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter mr-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram mr-3"></i></a>
+                        <a href="#"><i class="fab fa-linkedin mr-3"></i></a>
+                        <a href="#"><i class="fab fa-telegram mr-3"></i></a>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md bg-primary text-center p-2">
+                <small class="text-light">
+                    حقوق الطبع محفوظة &copy;
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="{% static 'blog/js/jquery.min.js' %}"></script>
+<script src="{% static 'blog/js/popper.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blog/js/fontAwesome-all.min.js' %}"></script>
